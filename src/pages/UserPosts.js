@@ -16,7 +16,7 @@ function UserPosts() {
 			<h2>{user?.name}</h2>
 			<ul>
 				{userPosts.map((post) => (
-					<li className='post' key={post.id}>
+					<li key={post.id}>
 						<Link to={`/posts/${post.id}`}>{post.title}</Link>
 					</li>
 				))}

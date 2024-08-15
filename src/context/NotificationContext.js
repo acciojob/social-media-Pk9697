@@ -4,7 +4,11 @@ import { v4 as uuid } from 'uuid'
 const NotificationContext = createContext(null)
 
 function NotificationContextProvider({ children }) {
-	const [notifications, setNotifications] = useState([])
+    const [notifications, setNotifications] = useState([{
+        id: 1,
+        message: 'Hello World',
+        authorId: 1,
+    }])
 
 	const addNotification = (notification) => {
 		setNotifications((prev) => [
