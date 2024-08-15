@@ -16,10 +16,10 @@ function Notifications() {
 			<section className='notificationsList'>
 				<div>
 					{notifications.map((notification) => (
-						<div key={notification.id}>
+						<section key={notification.id}>
 							<strong>{getAuthor(notification.authorId).name}</strong>{' '}
 							{notification.message}
-						</div>
+						</section>
 					))}
 				</div>
 			</section>
