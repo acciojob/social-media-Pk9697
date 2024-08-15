@@ -12,7 +12,7 @@ import Notifications from '../pages/Notifications'
 
 const App = () => {
 	return (
-		<div>
+		<main>
 			{/* Do not remove the main div */}
 			<BrowserRouter>
 				<Routes>
@@ -26,7 +26,7 @@ const App = () => {
 					</Route>
 				</Routes>
 			</BrowserRouter>
-		</div>
+		</main>
 	)
 }
 
