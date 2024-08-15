@@ -7,7 +7,7 @@ function Header() {
 
 	const handleClick = () => {
 		navigate('/notifications')
-		setIsClicked((prev)=>!prev)
+		setIsClicked(true)
 	}
 
 	return (
@@ -22,7 +22,7 @@ function Header() {
 						<Link to='/users'>Users</Link>
 					</li>
 					<li>
-						<Link to='/notifications'>Notifications</Link>
+						<Link to='/notifications' onClick={handleClick}>Notifications</Link>
 					</li>
 				</ul>
 				{!isClicked ? (
