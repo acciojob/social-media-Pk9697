@@ -115,3 +115,10 @@ body {
 	background-color: #b0d5f9;
 }
 
+/* NOTIFICATIONS */
+
+.notificationsList{
+	display: flex;
+	flex-direction: column;
+	gap: 0.5em;
+}

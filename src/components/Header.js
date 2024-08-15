@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 
 function Header() {
 	return (
-		<div className='header container'>
+		<div className='header container App'>
 			<h1>GenZ</h1>
 			<section>
 				<ul>
