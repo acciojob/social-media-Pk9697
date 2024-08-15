@@ -18,12 +18,12 @@ const App = () => {
 				<Routes>
 					<Route exact path='/' element={<Layout />}>
 						<Route index element={<Home />} />
-						<Route path='/posts/:postId' element={<PostDetails />} />
-						<Route path='/edit/posts/:postId' element={<EditPost />} />
-						<Route path='/users' element={<Users />} />
-						<Route path='/users/:userId' element={<UserPosts />} />
+						<Route path='posts/:postId' element={<PostDetails />} />
+						<Route path='edit/posts/:postId' element={<EditPost />} />
+						<Route path='users' element={<Users />} />
+						<Route path='users/:userId' element={<UserPosts />} />
+						<Route path='notifications' element={<Notifications />} />
 					</Route>
-					<Route path='/notifications' element={<Notifications />} />
 				</Routes>
 			</BrowserRouter>
 		</main>
