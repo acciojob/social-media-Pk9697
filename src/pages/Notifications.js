@@ -14,7 +14,7 @@ function Notifications() {
 		<section className='container notifications'>
 			<h2>Notifications</h2>
 			<section className='notificationsList'>
-				{notifications && (
+				{notifications.length && (
 					<div>
 						{notifications.map((notification) => (
 							<section key={notification.id}>
