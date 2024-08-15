@@ -117,11 +117,11 @@ body {
 
 /* NOTIFICATIONS */
 
-.notificationsList{
+/* .notificationsList{
 	display: flex;
 	flex-direction: column;
 	gap: 0.5em;
-}
+} */
 
 /* section.notificationsList > div{
 	border: 2px solid red;
