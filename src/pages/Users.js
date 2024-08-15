@@ -16,7 +16,7 @@ function Users() {
 				))}
             </ul> */}
 			{users.map((user) => (
-				<Link key={user.id} to={`/users/${user.id}`}>{user.name}</Link>
+				<Link className='post' key={user.id} to={`/users/${user.id}`}>{user.name}</Link>
 			))}
 		</div>
 	)
