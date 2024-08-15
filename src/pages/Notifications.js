@@ -11,17 +11,17 @@ function Notifications() {
 	}
 
 	return (
-		<section className='container notifications'>
+		<div className='container notifications'>
 			<h2>Notifications</h2>
-			<div className='notificationsList'>
+			<section className='notificationsList'>
 				{notifications.map((notification) => (
 						<div key={notification.id}>
 							<strong>{getAuthor(notification.authorId).name}</strong>{' '}
 							{notification.message}
 						</div>
 				))}
-			</div>
-		</section>
+			</section>
+		</div>
 	)
 }
 
