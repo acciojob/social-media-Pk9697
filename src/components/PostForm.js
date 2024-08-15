@@ -20,10 +20,10 @@ function PostForm({ addPost }) {
 	const handleSubmit = (e) => {
 		e.preventDefault()
 		addPost(post)
-		addNotification({
-			authorId: post.authorId,
-			message: 'Post added',
-		})
+		// addNotification({
+		// 	authorId: post.authorId,
+		// 	message: 'Post added',
+		// })
 		setPost({ title: '', authorId: '', content: '' })
 	}
 
