@@ -14,14 +14,12 @@ function Notifications() {
 		<section className='container notifications'>
 			<h2>Notifications</h2>
 			<section className='notificationsList'>
-				<div>
-					{notifications.map((notification) => (
-						<div key={notification.id}>
-							<strong>{getAuthor(notification.authorId).name}</strong>{' '}
-							{notification.message}
-						</div>
-					))}
-				</div>
+				{notifications.map((notification) => (
+					<div key={notification.id}>
+						<strong>{getAuthor(notification.authorId).name}</strong>{' '}
+						{notification.message}
+					</div>
+				))}
 			</section>
 		</section>
 	)
