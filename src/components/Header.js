@@ -1,7 +1,8 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 
 function Header() {
+	const navigate=useNavigate()
 	return (
 		<header className='header container App'>
 			<h1>GenZ</h1>
@@ -17,7 +18,7 @@ function Header() {
 						<Link to='/notifications'>Notifications</Link>
 					</li>
 				</ul>
-				<button className='button'>Refresh Notifications</button>
+				<button className='button' onClick={() => navigate('/notifications')}>Refresh Notifications</button>
 			</section>
 		</header>
 	)
