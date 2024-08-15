@@ -11,7 +11,7 @@ function Notifications() {
 	}
 
 	return (
-		<div className='container notifications'>
+		<section className='container notifications'>
 			<h2>Notifications</h2>
 			<section className='notificationsList'>
 				<div>
@@ -23,7 +23,7 @@ function Notifications() {
 					))}
 				</div>
 			</section>
-		</div>
+		</section>
 	)
 }
 
