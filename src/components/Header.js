@@ -1,8 +1,15 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
 
 function Header() {
 	const navigate = useNavigate()
+	const [isClicked, setIsClicked] = useState(false)
+
+	const handleClick = () => {
+		navigate('/notifications')
+		setIsClicked((prev)=>!prev)
+	}
+
 	return (
 		<header className='header container App'>
 			<h1>GenZ</h1>
@@ -18,11 +25,17 @@ function Header() {
 						<Link to='/notifications'>Notifications</Link>
 					</li>
 				</ul>
-				<div>
-					<button className='button' onClick={() => navigate('/notifications')}>
+				{!isClicked ? (
+					<div>
+						<button className='button' onClick={handleClick}>
+							Refresh Notifications
+						</button>
+					</div>
+				) : (
+					<button className='button' onClick={handleClick}>
 						Refresh Notifications
 					</button>
-				</div>
+				)}
 			</section>
 		</header>
 	)
