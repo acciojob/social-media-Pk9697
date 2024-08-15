@@ -7,14 +7,17 @@ function Users() {
 
 	return (
 		<div className='container users'>
-			<h2>Users</h2>
+			{/* <h2>Users</h2>
 			<ul>
 				{users.map((user) => (
 					<li key={user.id}>
 						<Link to={`/users/${user.id}`}>{user.name}</Link>
 					</li>
 				))}
-			</ul>
+            </ul> */}
+			{users.map((user) => (
+				<Link key={user.id} to={`/users/${user.id}`}>{user.name}</Link>
+			))}
 		</div>
 	)
 }
